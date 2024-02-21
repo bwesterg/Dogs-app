@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import react, {Component} from 'react';
 import './App.css';
+import DogContainer from './components/DogContainer';
+import DogForm from './components/DogForm';
+const dogsUrl = "http://localhost:3000/dogs";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    dogs: []
+  }
+
+  componentDidMount(){
+    this.getDogs();
+  }
+  
+  getDogs(){
+    fetch(dogsUrl)
+      .then(response => response.json())
+      .then(dogs => this.setState({dogs})) 
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <h1>Dogs App</h1>
+        <DogForm />
+        <DogContainer dogs={this.state.dogs}/>
+      </div>
+    );
+  }
 }
 
 export default App;
