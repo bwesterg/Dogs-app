@@ -301,3 +301,663 @@ Processing by DogsController#index as */*
 Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1060)
 
 
+Started GET "/dogs" for ::1 at 2024-02-21 17:09:36 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:09:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 0.6ms | Allocations: 10773)
+
+
+Completed 200 OK in 14ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 10990)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:09:39 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:09:39 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.4ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms | Allocations: 1175)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1071)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:13:12 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:13:12 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1095)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1060)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:15:33 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:15:33 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1081)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.5ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.5ms | Allocations: 1061)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:20:17 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:20:17 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Processing by DogsController#index as */*
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 1544)
+
+
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.4ms | Allocations: 1952)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:20:49 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:20:49 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Processing by DogsController#index as */*
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.1ms | Allocations: 1393)
+
+
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:21:05 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:21:05 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1069)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1060)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:21:39 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:21:39 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 1076)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1060)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:21:59 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:21:59 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1097)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1060)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:22:27 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:22:27 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1514)
+
+
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1504)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:39:19 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:39:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.5ms | Allocations: 10750)
+
+
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 10980)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:39:57 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:39:57 -0700
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDog Load (0.0ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1730)
+
+
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2255)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:41:49 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:41:49 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1078)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.5ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 1106)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:47:18 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:47:18 -0700
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDog Load (0.0ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.6ms | Allocations: 4852)
+
+
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 5218)
+
+
+Started POST "/dogs" for ::1 at 2024-02-21 17:47:34 -0700
+Processing by DogsController#create as */*
+  Parameters: {"newDog"=>{"name"=>"Snoopy", "description"=>"test description", "age"=>"100", "washed"=>true, "exercised"=>true}, "dog"=>{}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+  [1m[36mDog Create (3.2ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "description", "age", "washed", "exercised", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["description", nil], ["age", nil], ["washed", nil], ["exercised", nil], ["created_at", "2024-02-22 00:47:34.901679"], ["updated_at", "2024-02-22 00:47:34.901679"]]
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+Completed 201 Created in 11ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 2551)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:47:38 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:47:38 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1194)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 1176)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:47:51 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:47:51 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Processing by DogsController#index as */*
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1360)
+
+
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 1459)
+
+
+Started POST "/dogs" for ::1 at 2024-02-21 17:48:18 -0700
+Processing by DogsController#create as */*
+  Parameters: {"name"=>"Cujo", "description"=>"Scary", "age"=>"200", "washed"=>false, "exercised"=>true, "dog"=>{"name"=>"Cujo", "description"=>"Scary", "age"=>"200", "washed"=>false, "exercised"=>true}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+  [1m[36mDog Create (0.7ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "description", "age", "washed", "exercised", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cujo"], ["description", "Scary"], ["age", 200], ["washed", 0], ["exercised", 1], ["created_at", "2024-02-22 00:48:18.129958"], ["updated_at", "2024-02-22 00:48:18.129958"]]
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+Completed 201 Created in 8ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 1941)
+
+
+Started GET "/dogs" for ::1 at 2024-02-21 17:48:22 -0700
+Started GET "/dogs" for ::1 at 2024-02-21 17:48:22 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1355)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 1301)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:10:47 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.4ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 7.5ms | Allocations: 1453)
+
+
+Started GET "/favicon.ico" for ::1 at 2024-02-22 00:10:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/dogs" for ::1 at 2024-02-22 00:10:48 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.4ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms | Allocations: 1296)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:16:02 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:16:02 -0700
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.6ms | Allocations: 5119)
+
+
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 5956)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:21:06 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:21:06 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1483)
+
+
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1301)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:21:24 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:21:24 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1315)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1301)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:21:51 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:21:51 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Processing by DogsController#index as */*
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 1642)
+
+
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 2235)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:23:26 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:23:26 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1306)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.0ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1301)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:23:42 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:23:42 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1483)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1347)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:27:31 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:27:31 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.4ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.4ms | Allocations: 1313)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.4ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1334)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:28:57 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:28:57 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Processing by DogsController#index as */*
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1485)
+
+
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 1585)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:35:17 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:35:17 -0700
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.4ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 5.4ms | Allocations: 2262)
+
+
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.5ms | Allocations: 2635)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:35:22 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:35:23 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1308)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1301)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:36:48 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:36:48 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1311)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1301)
+
+
+Started DELETE "/dogs/4" for ::1 at 2024-02-22 00:37:05 -0700
+Processing by DogsController#destroy as */*
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 141)
+
+
+  
+NoMethodError (undefined method `fin' for Dog:Class):
+  
+app/controllers/dogs_controller.rb:20:in `destroy'
+Started GET "/dogs" for ::1 at 2024-02-22 00:37:07 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:37:07 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.6ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.6ms | Allocations: 1302)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1300)
+
+
+Started DELETE "/dogs/4" for ::1 at 2024-02-22 00:37:10 -0700
+Processing by DogsController#destroy as */*
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 109)
+
+
+  
+NoMethodError (undefined method `fin' for Dog:Class):
+  
+app/controllers/dogs_controller.rb:20:in `destroy'
+Started GET "/dogs" for ::1 at 2024-02-22 00:37:14 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:37:14 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 1350)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.8ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.8ms | Allocations: 1300)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:38:27 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:38:27 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1318)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1301)
+
+
+Started DELETE "/dogs/4" for ::1 at 2024-02-22 00:39:25 -0700
+Processing by DogsController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mDog Load (1.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:20:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+  [1m[36mDog Destroy (0.8ms)[0m  [1m[31mDELETE FROM "dogs" WHERE "dogs"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+Completed 204 No Content in 16ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 5728)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:39:27 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:39:27 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1279)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1187)
+
+
+Started DELETE "/dogs/5" for ::1 at 2024-02-22 00:39:41 -0700
+Processing by DogsController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:20:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+  [1m[36mDog Destroy (0.6ms)[0m  [1m[31mDELETE FROM "dogs" WHERE "dogs"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+Completed 204 No Content in 7ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 2008)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:39:43 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:39:43 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 1067)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1060)
+
+
+Started POST "/dogs" for ::1 at 2024-02-22 00:40:03 -0700
+Processing by DogsController#create as */*
+  Parameters: {"name"=>"", "description"=>"", "age"=>0, "washed"=>false, "exercised"=>false, "dog"=>{"name"=>"", "description"=>"", "age"=>0, "washed"=>false, "exercised"=>false}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+  [1m[36mDog Create (1.8ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "description", "age", "washed", "exercised", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["age", 0], ["washed", 0], ["exercised", 0], ["created_at", "2024-02-22 07:40:03.250079"], ["updated_at", "2024-02-22 07:40:03.250079"]]
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+Completed 201 Created in 9ms (Views: 0.6ms | ActiveRecord: 2.6ms | Allocations: 2014)
+
+
+Started DELETE "/dogs/undefined" for ::1 at 2024-02-22 00:40:07 -0700
+Processing by DogsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:20:in `destroy'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 565)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Dog with 'id'=undefined):
+  
+app/controllers/dogs_controller.rb:20:in `destroy'
+Started GET "/dogs" for ::1 at 2024-02-22 00:40:09 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:40:09 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 1208)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1186)
+
+
+Started DELETE "/dogs/6" for ::1 at 2024-02-22 00:40:11 -0700
+Processing by DogsController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:20:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+  [1m[36mDog Destroy (0.9ms)[0m  [1m[31mDELETE FROM "dogs" WHERE "dogs"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:21:in `destroy'
+Completed 204 No Content in 10ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 2007)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:40:13 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:40:13 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 1066)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 1059)
+
+
+Started POST "/dogs" for ::1 at 2024-02-22 00:40:45 -0700
+Processing by DogsController#create as */*
+  Parameters: {"name"=>"Skylar", "description"=>"Wilbanks' dog", "age"=>"31", "washed"=>true, "exercised"=>true, "dog"=>{"name"=>"Skylar", "description"=>"Wilbanks' dog", "age"=>"31", "washed"=>true, "exercised"=>true}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+  [1m[36mDog Create (0.7ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "description", "age", "washed", "exercised", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Skylar"], ["description", "Wilbanks' dog"], ["age", 31], ["washed", 1], ["exercised", 1], ["created_at", "2024-02-22 07:40:45.892745"], ["updated_at", "2024-02-22 07:40:45.892745"]]
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:8:in `create'
+Completed 201 Created in 7ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 1927)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:40:50 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:40:50 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1188)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1187)
+
+
+Started GET "/dogs" for ::1 at 2024-02-22 00:40:53 -0700
+Started GET "/dogs" for ::1 at 2024-02-22 00:40:53 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 1188)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1187)
+
+
