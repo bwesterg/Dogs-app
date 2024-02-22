@@ -1,10 +1,10 @@
 import React from 'react';
 import DogItem from './DogItem';
 
-export default function DogContainer({dogs, deleteDog}){
+export default function DogContainer({dogs, deleteDog, updateDog}){
 
     const showDogs = () => {
-        return dogs.map(dog => <DogItem key={dog.id} {...dog} deleteDog={deleteDog} />)
+        return dogs.map(dog => <DogItem key={dog.id} {...dog} updateDog={updateDog} deleteDog={deleteDog} />)
     };
 
     return(

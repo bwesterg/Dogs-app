@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import DogContainer from './components/DogContainer';
 import DogForm from './components/DogForm';
-const dogsUrl = "http://localhost:3000/dogs";
+import { patchDog, postDog, deleteDog } from './helpers/index';
+const dogsUrl = "http://localhost:3000/dogs/";
 
 class App extends Component {
   state = {
@@ -23,14 +24,13 @@ class App extends Component {
     this.setState({
       dogs: [...this.state.dogs, newDog]
     })
+    postDog(newDog)
+  }
 
-    fetch(dogsUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newDog)
-    })
+  updateDog = (updatedDog) => {
+    let dogs = this.state.dogs.map(dog => dog.id === updatedDog.id ? updatedDog : dog) 
+    this.setState({ dogs })
+    patchDog(updatedDog)
   }
 
   deleteDog = (id) => {
@@ -38,15 +38,15 @@ class App extends Component {
     this.setState({
       dogs: filtered
     })
-    fetch(dogsUrl + "/" + id, { method: "DELETE" } )
+    deleteDog(id)
   }
 
   render(){
     return (
       <div className="App">
         <h1>Dogs App</h1>
-        <DogForm addDog={this.addDog}/>
-        <DogContainer deleteDog={this.deleteDog} dogs={this.state.dogs}/>
+        <DogForm submitAction={this.addDog} />
+        <DogContainer updateDog={this.updateDog} deleteDog={this.deleteDog} dogs={this.state.dogs}/>
       </div>
     );
   }
