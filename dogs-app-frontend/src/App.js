@@ -3,11 +3,14 @@ import './App.css';
 import DogContainer from './components/DogContainer';
 import DogForm from './components/DogForm';
 import { patchDog, postDog, deleteDog } from './helpers/index';
+import SignUpForm from './components/SignUpForm';
 const dogsUrl = "http://localhost:3000/dogs/";
 
 class App extends Component {
   state = {
-    dogs: []
+    dogs: [],
+    user: {},
+    alerts: []
   }
 
   componentDidMount(){
@@ -41,10 +44,33 @@ class App extends Component {
     deleteDog(id)
   }
 
+  signUp = (user) => {
+    fetch("http://localhost:3000/users", {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify({user})
+    })
+    .then(response => response.json())
+    .then(response => {
+      if (response.errors){
+        this.setState({alerts: response.errors})
+      } else {
+        localStorage.setItem('token', response.token)
+        this.setState({
+          user: response.user,
+          alerts: ["User successfully created!!"]
+        })
+      }
+    })
+  }
+
   render(){
     return (
       <div className="App">
         <h1>Dogs App</h1>
+        <SignUpForm signUp={this.signUp} alerts={this.state.alerts}/>
         <DogForm submitAction={this.addDog} />
         <DogContainer updateDog={this.updateDog} deleteDog={this.deleteDog} dogs={this.state.dogs}/>
       </div>
