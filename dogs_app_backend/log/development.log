@@ -1643,3 +1643,424 @@ Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 1681
 Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 1.4ms | Allocations: 2167)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20240222220340)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240222220340"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/dogs/" for ::1 at 2024-02-22 15:12:17 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 15:12:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 7.2ms | ActiveRecord: 0.5ms | Allocations: 10916)
+
+
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 11233)
+
+
+Started POST "/" for ::1 at 2024-02-22 15:25:40 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/users" for ::1 at 2024-02-22 15:26:13 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Ben123", "password"=>"[FILTERED]", "user"=>{"username"=>"Ben123"}}
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Ben123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 406 Not Acceptable in 11ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 4203)
+
+
+Started POST "/users" for ::1 at 2024-02-22 15:28:09 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Ben123", "password"=>"[FILTERED]", "user"=>{"username"=>"Ben123"}}
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Ben123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 406 Not Acceptable in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 845)
+
+
+Started POST "/users" for ::1 at 2024-02-22 15:28:19 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Ben123", "password"=>"[FILTERED]", "user"=>{"username"=>"Ben123"}}
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Ben123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 406 Not Acceptable in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 841)
+
+
+Started POST "/users" for ::1 at 2024-02-22 15:29:26 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Ben123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Ben123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Ben123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Ben123"], ["password_digest", "[FILTERED]"], ["created_at", "2024-02-22 22:29:27.190265"], ["updated_at", "2024-02-22 22:29:27.190265"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 201 Created in 271ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 5967)
+
+
+Started POST "/users" for ::1 at 2024-02-22 15:29:57 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Ben123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Ben123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 406 Not Acceptable in 295ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 2145)
+
+
+Started POST "/users" for ::1 at 2024-02-22 15:31:21 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 406 Not Acceptable in 264ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 3360)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 16:55:09 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 16:55:09 -0700
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.9ms | Allocations: 4198)
+
+
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.2ms | Allocations: 5422)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 16:55:13 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 16:55:13 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (3.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 3.1ms | Allocations: 1207)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1200)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 16:57:10 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 16:57:10 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.5ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.5ms | Allocations: 1208)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1189)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 16:57:14 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 16:57:14 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 1197)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1189)
+
+
+Started POST "/users" for ::1 at 2024-02-22 17:01:29 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Ben123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Ben123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 406 Not Acceptable in 289ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 1224)
+
+
+Started POST "/users" for ::1 at 2024-02-22 17:01:44 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Ben123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Ben123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 406 Not Acceptable in 296ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1216)
+
+
+Started POST "/users" for ::1 at 2024-02-22 17:02:45 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Gretchen123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Gretchen123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Gretchen123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Gretchen123"], ["password_digest", "[FILTERED]"], ["created_at", "2024-02-23 00:02:45.367171"], ["updated_at", "2024-02-23 00:02:45.367171"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 201 Created in 301ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 3462)
+
+
+Started GET "/users" for ::1 at 2024-02-22 17:03:01 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (7.0.8) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.8) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+activerecord (7.0.8) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/user" for ::1 at 2024-02-22 17:03:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/users" for ::1 at 2024-02-22 17:04:23 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.8ms | Allocations: 3473)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:08:28 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:08:28 -0700
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.8ms | Allocations: 4468)
+
+
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 5668)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:09:53 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:09:53 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Processing by DogsController#index as */*
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1529)
+
+
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1999)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:10:11 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:10:11 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1200)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1189)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:11:33 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:11:33 -0700
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.8ms | Allocations: 5020)
+
+
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5731)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:13:01 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:13:01 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1201)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1189)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:13:40 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:13:40 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Processing by DogsController#index as */*
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1530)
+
+
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 2005)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:15:41 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:15:41 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1195)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1189)
+
+
+Started POST "/users" for ::1 at 2024-02-22 17:16:39 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Rachel123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Rachel123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Rachel123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Rachel123"], ["password_digest", "[FILTERED]"], ["created_at", "2024-02-23 00:16:39.353109"], ["updated_at", "2024-02-23 00:16:39.353109"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 201 Created in 290ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 5313)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:20:29 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:20:29 -0700
+Processing by DogsController#index as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1835)
+
+
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 2572)
+
+
+Started POST "/users" for ::1 at 2024-02-22 17:21:02 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Rachel123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Rachel123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Completed 406 Not Acceptable in 298ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1235)
+
+
+Started POST "/users" for ::1 at 2024-02-22 17:21:45 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Lenzi123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Lenzi123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Lenzi123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Lenzi123"], ["password_digest", "[FILTERED]"], ["created_at", "2024-02-23 00:21:46.264299"], ["updated_at", "2024-02-23 00:21:46.264299"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 201 Created in 288ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 3387)
+
+
+Started GET "/users" for ::1 at 2024-02-22 17:21:50 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1195)
+
+
+Started GET "/dogs/" for ::1 at 2024-02-22 17:25:56 -0700
+Started GET "/dogs/" for ::1 at 2024-02-22 17:25:56 -0700
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+  ↳ app/controllers/dogs_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 1997)
+
+
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1769)
+
+
+Started POST "/users" for ::1 at 2024-02-22 17:26:38 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Jeremy123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Jeremy123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Jeremy123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Jeremy123"], ["password_digest", "[FILTERED]"], ["created_at", "2024-02-23 00:26:38.468394"], ["updated_at", "2024-02-23 00:26:38.468394"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 201 Created in 302ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 3387)
+
+
