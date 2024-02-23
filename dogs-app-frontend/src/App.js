@@ -4,6 +4,10 @@ import DogContainer from './components/DogContainer';
 import DogForm from './components/DogForm';
 import { patchDog, postDog, deleteDog } from './helpers/index';
 import SignUpForm from './components/SignUpForm';
+import {Route, Switch} from 'react-router-dom';
+import PrivateRoute from './components/PrivateRoute';
+import Home from './components/Home';
+
 const dogsUrl = "http://localhost:3000/dogs/";
 
 class App extends Component {
@@ -70,9 +74,20 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Dogs App</h1>
-        <SignUpForm signUp={this.signUp} alerts={this.state.alerts}/>
-        <DogForm submitAction={this.addDog} />
-        <DogContainer updateDog={this.updateDog} deleteDog={this.deleteDog} dogs={this.state.dogs}/>
+        <Switch>
+          <PrivateRoute 
+            exact
+            path="/" 
+            component={Home} 
+            submitAction={this.addDog}
+            updateDog={this.updateDog}
+            deleteDog={this.deleteDog} 
+            dogs={this.state.dogs}
+          />
+          <Route exact path="/signup" render={(routerProps) => <SignUpForm signUp={this.signUp} alerts={this.state.alerts}/>} />
+          {/* <DogForm submitAction={this.addDog} />
+          <DogContainer updateDog={this.updateDog} deleteDog={this.deleteDog} dogs={this.state.dogs}/> */}
+        </Switch>
       </div>
     );
   }
