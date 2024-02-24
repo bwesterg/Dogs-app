@@ -4,7 +4,7 @@ import DogContainer from './components/DogContainer';
 import DogForm from './components/DogForm';
 import { patchDog, postDog, deleteDog } from './helpers/index';
 import SignUpForm from './components/SignUpForm';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import Home from './components/Home';
 
@@ -48,8 +48,30 @@ class App extends Component {
     deleteDog(id)
   }
 
+  login = ({username, password}) => {
+    return fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ username, password })
+    })
+    .then(response => response.json())
+    .then(response => {
+      if (response.errors){
+        this.setState({alerts: response.errors})
+      } else {
+        localStorage.setItem('token', response.token)
+        this.setState({
+          user: response.user,
+          alerts: ["User logged in!!"]
+        })
+      }
+    })
+  }
+
   signUp = (user) => {
-    fetch("http://localhost:3000/users", {
+    return fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {
           "Content-Type": "application/json"
@@ -84,9 +106,12 @@ class App extends Component {
             deleteDog={this.deleteDog} 
             dogs={this.state.dogs}
           />
-          <Route exact path="/signup" render={(routerProps) => <SignUpForm signUp={this.signUp} alerts={this.state.alerts}/>} />
+          <Route exact path="/signup" render={(routerProps) => {
+            return <SignUpForm {...routerProps} login={this.login} signUp={this.signUp} alerts={this.state.alerts}/>}
+          } />
           {/* <DogForm submitAction={this.addDog} />
           <DogContainer updateDog={this.updateDog} deleteDog={this.deleteDog} dogs={this.state.dogs}/> */}
+          <Redirect to="/" />
         </Switch>
       </div>
     );
