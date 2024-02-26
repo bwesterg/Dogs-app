@@ -15,6 +15,7 @@ class App extends Component {
     dogs: [],
     user: {},
     alerts: []
+    //add auth state
   }
 
   componentDidMount(){
